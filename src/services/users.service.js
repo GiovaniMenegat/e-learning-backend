@@ -27,10 +27,9 @@ const exclude = async (id) => {
 
 const login = async (email, password) => {
     // TODO criptografar
-
     const userLogin = await User.findOne({ where: { email, password } });
 
-    if (userLogin) return { message: 'E-mail e/ou senha incorretos!' };
+    if (!userLogin) return { message: 'E-mail e/ou senha incorretos!' };
     
     const token = jwt.sign(
         { userId: userLogin.id, email },
@@ -38,7 +37,7 @@ const login = async (email, password) => {
         { expiresIn: '7d', algorithm: 'HS256' },
     );
 
-    return { token };
+    return { token, name: userLogin.name };
 }
 
 module.exports = {
