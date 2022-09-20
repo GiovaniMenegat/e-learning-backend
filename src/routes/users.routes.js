@@ -1,5 +1,6 @@
 const route = require('express').Router();
 const userController = require('../controllers/users.controller');
+const { authMiddleware } = require('../middlewares/auth.middleware');
 const { 
     passwordMiddleware, 
     emailMiddleware, 

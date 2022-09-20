@@ -10,6 +10,10 @@ const Class = (sequelize, DataTypes) => {
     updatedAt: DataTypes.DATE
   });
 
+  Class.associate = (models) => {
+    Class.hasMany(models.Rating, {foreignKey: 'classId', as: 'ratings'});
+  }
+  
   return Class;
 };
 

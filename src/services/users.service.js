@@ -26,7 +26,6 @@ const exclude = async (id) => {
 }
 
 const login = async (email, password) => {
-    // TODO criptografar
     const userLogin = await User.findOne({ where: { email, password } });
 
     if (!userLogin) return { message: 'E-mail e/ou senha incorretos!' };
