@@ -2,6 +2,7 @@ const route = require('express').Router();
 const ratingsControllers = require('../controllers/ratings.controller');
 const { authMiddleware } = require('../middlewares/auth.middleware');
 
+route.get('/recommendation', authMiddleware, ratingsControllers.getRecommendation);
 route.get('/:classId', authMiddleware, ratingsControllers.getRatingByClass);
 route.post('/:classId', authMiddleware, ratingsControllers.saveRating);
 
