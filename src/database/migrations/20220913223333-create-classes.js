@@ -14,9 +14,6 @@ module.exports = {
       description: {
         type: Sequelize.STRING
       },
-      tags: {
-        type: Sequelize.STRING
-      },
       video_id: {
         type: Sequelize.STRING
       },

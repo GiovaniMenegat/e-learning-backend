@@ -6,7 +6,6 @@ module.exports = {
       {
         name: 'Como funciona a internet',
         description: 'Nesta aula vamos aprender como funciona a internet. Vamos ver o que acontece por baixo dos panos quando você digita uma URL no navegador.',
-        tags: '#web',
         video_id: 'AABqPceCwZk',
         type: 'basico',
         createdAt: Sequelize.literal('CURRENT_TIMESTAMP'),
@@ -15,7 +14,6 @@ module.exports = {
       {
         name: 'Como funcionam os navegadores web',
         description: 'Um navegador web te leva para qualquer lugar na internet. Ele obtém informações de outras partes da web e as exibe em seu computador ou dispositivo móvel.',
-        tags: '#web',
         video_id: '91hpA4F1-jw',
         type: 'basico',
         createdAt: Sequelize.literal('CURRENT_TIMESTAMP'),
@@ -24,7 +22,6 @@ module.exports = {
       {
         name: 'O que é HTTP?',
         description: 'HTTP é um protocolo de transferência que possibilita que as pessoas que inserem a URL do seu site na Web possam ver os conteúdos e dados que nele existem. A sigla vem do inglês Hypertext Transfer Protocol.',
-        tags: '#web',
         video_id: 'G9VlDTshk-k',
         type: 'basico',
         createdAt: Sequelize.literal('CURRENT_TIMESTAMP'),
@@ -33,7 +30,6 @@ module.exports = {
       {
         name: 'O que é front-end e back-end?',
         description: 'Nesta aula vamos aprender a diferença entre os profissionais front-end, back-end e o full stack.',
-        tags: '#web',
         video_id: 'bnoXykE_ng0',
         type: 'basico',
         createdAt: Sequelize.literal('CURRENT_TIMESTAMP'),
@@ -42,7 +38,6 @@ module.exports = {
       {
         name: 'O que é faz um profissional back-end?',
         description: 'O desenvolvedor back-end é o responsável por programar as funções que fazem os dados serem enviados ao servidor para serem armazenados no banco de dados.',
-        tags: '#web',
         video_id: 'dyuewDuBo4w',
         type: 'backend',
         createdAt: Sequelize.literal('CURRENT_TIMESTAMP'),
@@ -51,7 +46,6 @@ module.exports = {
       {
         name: 'O que é faz um profissional front-end?',
         description: 'O Front-end está muito relacionado com a interface gráfica do projeto. Ou seja, é onde se desenvolve a aplicação com a qual o usuário irá interagir diretamente, seja em softwares, sites, aplicativos, etc.',
-        tags: '#web',
         video_id: 'i9lQKN8GSs4',
         type: 'frontend',
         createdAt: Sequelize.literal('CURRENT_TIMESTAMP'),
@@ -60,7 +54,6 @@ module.exports = {
       {
         name: 'O que é uma API?',
         description: 'A sigla API deriva da expressão inglesa Application Programming Interface que, traduzida para o português, pode ser compreendida como uma interface de programação de aplicação.',
-        tags: '#web',
         video_id: '5ezlxPqaOeY',
         type: 'backend',
         createdAt: Sequelize.literal('CURRENT_TIMESTAMP'),
@@ -69,7 +62,6 @@ module.exports = {
       {
         name: 'O que é um Banco de Dados?',
         description: 'Um banco de dados é uma coleção organizada de informações - ou dados - estruturadas, normalmente armazenadas eletronicamente em um sistema de computador.',
-        tags: '#web',
         video_id: 'P6uiLQ6F7Mo',
         type: 'backend',
         createdAt: Sequelize.literal('CURRENT_TIMESTAMP'),
@@ -78,7 +70,6 @@ module.exports = {
       {
         name: 'O que é HTML?',
         description: 'HTML significa HiperText Markup Language. O HTML é o componente básico da web, ele permite inserir o conteúdo e estabelecer a estrutura básica de um website.',
-        tags: '#web',
         video_id: 'RISPTY1Lh2A',
         type: 'frontend',
         createdAt: Sequelize.literal('CURRENT_TIMESTAMP'),
@@ -87,7 +78,6 @@ module.exports = {
       {
         name: 'O que é CSS?',
         description: 'CSS significa Cascading Style Sheets. É usado para estilizar elementos escritos em uma linguagem de marcação como HTML.',
-        tags: '#web',
         video_id: 'CTjUpZqTJDg',
         type: 'frontend',
         createdAt: Sequelize.literal('CURRENT_TIMESTAMP'),
@@ -96,7 +86,6 @@ module.exports = {
       {
         name: 'O que é UX/UI?',
         description: 'UX significa User Experience, e UI significa User Interface. Cada área trabalha de determinada forma para oferecer a melhor experiência ao usuário',
-        tags: '#web',
         video_id: 't_wlpJq90Zw',
         type: 'frontend',
         createdAt: Sequelize.literal('CURRENT_TIMESTAMP'),
