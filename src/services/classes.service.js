@@ -1,7 +1,10 @@
 const { Class } = require('../database/models');
+const { Rating } = require('../database/models');
 
-const getAll = async () => {
-  const classes = await Class.findAll();
+const getAll = async (userId) => {
+  let classes = await Class.findAll({
+    include: { model: Rating, as: 'ratings', where:{ userId }, attributes: ['rating'], required:false },
+  });
 
   if (!classes) return { message: 'Algo deu errado' };
 

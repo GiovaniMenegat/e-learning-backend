@@ -1,7 +1,9 @@
 const classService = require('../services/classes.service');
 
 const getAll = async (req, res) => {
-  const classes = await classService.getAll();
+  const { userId } = req.user;
+
+  const classes = await classService.getAll(userId);
 
   if (classes.message) return res.status(400).json(classes);
 
