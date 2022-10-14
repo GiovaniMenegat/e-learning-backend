@@ -6,7 +6,8 @@
   "author": "GiovaniMenegat <gi.menegat10@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon ./src/index.js",
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js",
     "compose:up": "sudo docker-compose up --build -d",
     "db:reset": "npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all"
   },
